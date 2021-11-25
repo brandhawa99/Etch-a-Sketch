@@ -22,3 +22,7 @@ body {
   padding: 0;
   height: 100vh;
 }
+
+.visited {
+  background-color: black;
+}
