@@ -1,20 +1,14 @@
 const container = document.querySelector('.container');
+const button = document.querySelector('.button');
+const SIZE = 600;
+let num = 16;
 
-for(let i = 0 ; i<16*16-1; i++){
+for(let i = 0 ; i<num*num; i++){
     let pixle = document.createElement('div');
     pixle.setAttribute('class','pixle')
     container.appendChild(pixle); 
 }
 
-// const squares = document.querySelectorAll('.pixle');
-// squares.forEach(square =>{
-//     square.addEventListener('mouseover',myFunc(e))
-// })
-
-const square = document.querySelector('.pixle');
-square.addEventListener('mouseover',()=>{
-    square.classList.toggle('visited');
-})
 
 const squares = document.querySelectorAll('.pixle');
 squares.forEach(square =>{
@@ -22,3 +16,10 @@ squares.forEach(square =>{
         square.classList.toggle('visited');
     })
 })
+
+button.addEventListener('click',() =>{
+    squares.forEach(square =>{
+        square.classList.remove('visited');
+    })
+})
+
