@@ -1,7 +1,7 @@
 const container = document.querySelector('.container');
 const button = document.querySelector('.button');
 const SIZE = 600;
-let num = 16;
+let num = 30;
 
 for(let i = 0 ; i<num*num; i++){
     let pixle = document.createElement('div');
@@ -22,4 +22,3 @@ button.addEventListener('click',() =>{
         square.classList.remove('visited');
     })
 })
-
