@@ -16,11 +16,32 @@
 body {
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   margin: 0;
   padding: 0;
   height: 100vh;
+}
+.value-display {
+  color: white;
+}
+
+.toggles {
+  width: 15vw;
+  margin-right: 50px;
+  height: 70vh;
+  background-color: rebeccapurple;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.slider {
+  background: red;
+}
+#buttons {
+  width: 50%;
+  height: 30px;
 }
 
 .visited {
