@@ -1,17 +1,16 @@
 .pixle {
   background-color: rgb(192, 198, 202);
   padding: 0;
-  width: 20px;
-  height: 20px;
 }
 .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  width: 600px;
-  height: 600px;
+  width: 602px;
+  height: 602px;
   gap: 0;
+  background-color: rgb(192, 198, 202);
 }
 body {
   display: flex;
@@ -35,6 +34,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 30px;
 }
 .slider {
   background: red;
